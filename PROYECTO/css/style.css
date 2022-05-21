@@ -51,12 +51,12 @@ footer{
 
     background-color: black;
     color: white;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
 }
 
@@ -99,6 +99,32 @@ footer p{
 }
 
 
+/* LANDING CSS */
+.foto {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+
+/* Musica CSS */
+
+.YoutubeVideos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(36, 1, 1, 0.801);
+    max-width: 100%;
+}
+   
+.YoutubeVideos > div{
+    background-color: #03f303ab;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
 
 
 
@@ -121,3 +147,6 @@ footer p{
       margin-bottom: 20px;
     }
     }
+
+
+    
