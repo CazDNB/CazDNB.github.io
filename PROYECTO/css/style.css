@@ -1,4 +1,9 @@
 /* CSS UNIVERSAL */
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: sans-serif;
     margin: 0;
@@ -42,8 +47,49 @@ nav a:hover{
     font-size: larger;
     
 }
+/* JUEGOS CSS */
 
+h1{
+    font-size: larger;
+    font-weight:bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    padding-bottom: 20px;
+}
 
+h2{
+    font-size: large;
+    font-weight: bold;
+    text-align: justify;
+    
+}
+
+#contenedor-juegos{
+    max-width: 1400px;
+    max-height: auto;
+    margin: auto;
+    padding: 10px, 10px, 10px, 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+#contenedor-juegos > div{
+    border: 2px solid #cc1e1e;
+    border-radius: 10px;
+    padding: 10px, 30px;
+}
+
+#contenedor-juegos > div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 
 /* FOOTER CS */
 footer{
@@ -52,12 +98,15 @@ footer{
     background-color: black;
     color: white;
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
-    height: auto;
-    width: 100%;
-    padding-top: 40px;
+    height: 25vh;
+    max-width: 100%;
+    padding-top: 10px;
+    margin-bottom: 0;
+    
+    
 }
 
 footer p{
@@ -71,22 +120,18 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0 1rem 0;
     flex-wrap: wrap;
+    margin: 0;
 
 }
 
 .redes li{
     padding: 0 10px;
+    margin: 0;
+
 }
 
-.redes a{
-    text-decoration: none;
-    color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
-    border-radius: 50%;
-}
 
 .redes a i{
     font-size: 1.1rem;
@@ -100,12 +145,43 @@ footer p{
 
 
 /* LANDING CSS */
-.foto {
+/* .foto {
     max-width: 100%;
     height: auto;
-  }
-  
+  } */
 
+#hero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("../assets/img/foto\ main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero > p{
+    font-size: 3em;
+    font-weight: bold;
+    color: red;
+    font-family: 'Koulen', cursive;
+    
+}
+
+#hero > p:hover{
+      font-size: 3.5em;
+      color: #ff1919ab;
+}
 
 
 /* Musica CSS */
@@ -113,17 +189,19 @@ footer p{
 .YoutubeVideos{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(36, 1, 1, 0.801);
+    background-color: rgba(255, 255, 255,);
     max-width: 100%;
+    justify-content: space-between;
 }
    
 .YoutubeVideos > div{
-    background-color: #03f303ab;
+    background-color: #000000ab;
     width: auto;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+
 }
 
 
