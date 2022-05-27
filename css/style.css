@@ -123,10 +123,42 @@ div.juego:hover{
 }
 
 
+/* FORMULARIO CSS */
+.formulario{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 10px, 10px;
+outline: none;
+}
+
+label{
+    padding: 10px, 10px;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(255, 0, 0);
+}
+
+ #mensaje{
+    border: 3px dotted  #e20505; 
+    border-radius: 25px;   
+    outline: none;
+    width: 100%;
+    max-width: 900px;
+    }
+
+#mensaje:focus{
+    border: 3px solid #e20505;
+}
+
+#nombre{
+    border-color: #000000;
+}
 
 
 
-/* FOOTER CS */
+/* FOOTER CSS */
 footer{
     font-family: 'Koulen', cursive;
 
