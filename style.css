@@ -1,0 +1,317 @@
+/* CSS UNIVERSAL */
+/* *{
+    box-sizing: border-box;
+} */
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(218, 176, 176);
+    
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER CSS */
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header{
+    display: flex;
+    min-height: 80px;
+    background-color: black; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Koulen', cursive;
+    font-size: 2vw;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+/* Animación ! */
+
+nav a:hover{ 
+    color: crimson;
+    font-size: larger;
+    
+}
+/* JUEGOS CSS */
+
+h1{
+    font-family: 'Koulen', cursive;
+    font-size: 3em;
+    font-weight:bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    padding-bottom: 20px;
+
+
+}
+
+h2{
+    font-size: large;
+    font-weight: bold;
+    text-align: justify;
+    
+}
+
+/* Animación ! */
+div.juego:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#contenedor-juegos{
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+#contenedor-juegos > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 10px , 10px;
+    margin: 20px;
+    width: 25em;
+}
+
+#contenedor-juegos > div > img{
+    height: 30vh;
+    object-fit: contain; 
+}
+
+#contenedor-juegos > div >p{
+    padding: 30px, 30px ;
+    margin: 30px, 30px ;
+    text-align: center;
+}
+
+
+/* FORMULARIO CSS */
+.formulario{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 10px, 10px;
+outline: none;
+}
+
+label{
+    padding: 10px, 10px;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(255, 0, 0);
+}
+
+ #mensaje{
+    border: 3px dotted  #e20505; 
+    border-radius: 25px;   
+    outline: none;
+    width: 100%;
+    max-width: 900px;
+    }
+
+#mensaje:focus{
+    border: 3px solid #e20505;
+}
+
+#nombre{
+    border-color: #000000;
+}
+
+
+
+/* FOOTER CSS */
+footer{
+    font-family: 'Koulen', cursive;
+
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 25vh;
+    max-width: 100%;
+    padding-top: 10px;
+    margin-bottom: 0;
+    
+    
+    
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+.redes li{
+    padding: 0 10px;
+    margin: 0;
+
+}
+
+
+.redes a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+/* Animación ! */
+
+.redes a:hover i{
+    color: rgb(255, 0, 0);
+}
+
+
+/* LANDING CSS */
+/* .foto {
+    max-width: 100%;
+    height: auto;
+  } */
+
+#hero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("../assets/img/foto\ main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#hero > p{
+    font-size: 3em;
+    font-weight: bold;
+    color: red;
+    font-family: 'Koulen', cursive;
+    
+}
+
+/* Animación ! */
+
+#hero > p:hover{
+      font-size: 3.5em;
+      color: #ff1919ab;
+}
+
+
+/* Musica CSS */
+
+.YoutubeVideos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255,);
+    max-width: 100%;
+    justify-content: space-around;
+    background-color: rgba(10, 10, 10, 1);
+}
+   
+.YoutubeVideos > div{
+    background-color: #000000ab;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+}
+
+
+
+/* Media querys */
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        font-size: 2em;
+        position: static;
+        max-width: 100vh;
+        height: fit-content;
+
+    }
+
+    nav{
+        padding: 10px 0 px;
+    }
+}
+
+
+@media (max-width:500px) {
+    header{
+        flex-direction: column;
+        font-size: 2em;
+        position: static;
+        max-width: 100vh;
+
+
+    }
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
+
+
+    
